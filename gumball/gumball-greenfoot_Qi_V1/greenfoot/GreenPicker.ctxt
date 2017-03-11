@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=GreenPicker
+comment0.text=\n\ Write\ a\ description\ of\ class\ GreenPicker\ here.\n\ CMPE\ 202,\ original\ file\ from\ professor\ Paul\n\ @author\ Qi\ LIU\ \n\ @version\ 3/9/2017\n
+comment1.params=msg
+comment1.target=void\ setMessage(java.lang.String)
+comment2.params=
+comment2.target=void\ pick()
+numComments=3

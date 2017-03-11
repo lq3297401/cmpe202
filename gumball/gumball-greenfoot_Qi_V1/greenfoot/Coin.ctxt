@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Coin
+comment0.text=\n\ Write\ a\ description\ of\ class\ Coin\ here.\n\ CMPE\ 202,\ original\ file\ from\ professor\ Paul\n\ @author\ Qi\ LIU\n\ @version\ 3/9/2017\n
+comment1.params=
+comment1.target=int\ getValue()
+comment2.params=
+comment2.target=void\ inSlot()
+comment3.params=
+comment3.target=void\ act()
+numComments=4
