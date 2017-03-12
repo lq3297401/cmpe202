@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=GumballMachine
+comment0.text=\n\ Write\ a\ description\ of\ class\ GumballMachine\ here.\n\ CMPE\ 202,\ original\ file\ from\ professor\ Paul\n\ @author\ Qi\ LIU\n\ @version\ 3/9/2017\n
+comment1.params=
+comment1.target=GumballMachine()
+comment2.params=msg
+comment2.target=void\ setMessage(java.lang.String)
+comment3.params=
+comment3.target=void\ choosePicker()
+comment4.params=
+comment4.target=void\ act()
+numComments=5

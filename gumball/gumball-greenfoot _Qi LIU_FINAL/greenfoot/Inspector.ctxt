@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Inspector
+comment0.text=\n\ Write\ a\ description\ of\ class\ Inspector\ here.\n\ CMPE\ 202,\ original\ file\ from\ professor\ Paul\n\ @author\ Qi\ LIU\n\ @version\ 3/9/2017\n
+comment1.params=msg
+comment1.target=void\ setMessage(java.lang.String)
+comment2.params=obj
+comment2.target=void\ addPicker(Picker)
+comment3.params=obj
+comment3.target=void\ removePicker(Picker)
+comment4.params=coin
+comment4.target=void\ inspect(Coin)
+numComments=5
