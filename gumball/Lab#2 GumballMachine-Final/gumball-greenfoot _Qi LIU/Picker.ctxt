@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Picker
+comment0.text=\n\ Write\ a\ description\ of\ class\ Picker\ here.\n\ CMPE\ 202,\ original\ file\ from\ professor\ Paul\n\ @author\ Qi\ LIU\ \n\ @version\ 3/9/2017\n
+comment1.params=
+comment1.target=void\ pick()
+comment2.params=x\ y
+comment2.target=void\ moveTo(int,\ int)
+numComments=3
