@@ -1,24 +1,183 @@
 UML包括：
-事物
-关系
-图
+事物Things
+关系Relationships
+图Diagrams
 扩展机制
 
-事物：
-结构：类，接口，构件，节点等等
-行为：交互（消息），状态等等
-分组：包，子系统等等
-注释：注释
+事物Things：
+结构 Structural ：类 Class，接口 Interface，构件，节点等等
+行为Behavioral：交互（消息），状态等等
+分组 Grouping：包，子系统等等
+注释 Annotational：注释
+
+	结构Structural things:
+	The Structural things define the static part of the model. They represent physical and conceptual 	elements. Following are the brief descriptions of the structural things.
+	Class:
+	Class represents set of objects having similar responsibilities.
+	类，分三行，分别是：名称，变量，方法
+ 
+	Interface:
+	Interface defines a set of operations which specify the responsibility of a class.
+ 
+	Collaboration:
+	Collaboration defines interaction between elements.
+ 
+	Use case:
+	Use case represents a set of actions performed by a system for a specific goal.
+ 
+	Component:
+	Component describes physical part of a system.
+ 
+	Node:
+	A node can be defined as a physical element that exists at run time.
+
+	
+	行为Behavioral things:
+A behavioral thing consists of the dynamic parts of UML models. Following are the behavioral things:
+Interaction:
+Interaction is defined as a behavior that consists of a group of messages exchanged among elements to accomplish a specific task.
+ 
+State machine:
+State machine is useful when the state of an object in its life cycle is important. It defines the sequence of states an object goes through in response to events. Events are external factors responsible for state change.
+ 
+分组Grouping things:
+Grouping things can be defined as a mechanism to group elements of a UML model together. There is only one grouping thing available:
+Package:
+Package is the only one grouping thing available for gathering structural and behavioral things.
+ 
+注释Annotational things:
+Annotational things can be defined as a mechanism to capture remarks, descriptions, and comments of UML model elements. Note is the only one Annotational thing available.
+Note:
+A note is used to render comments, constraints etc of an UML element.
+
+	
 
 关系：
 依赖
-关联（聚合，组合）
-泛化，
+关联（聚合(整体与部分的关系)，组合（强聚合，一旦删除了整体，部分就不存在了，整体和部分生命周期一致））
+泛化（继承）
 实现
 
-图：
-类图
-时序图
+Relationship :
+Relationship is another most important building block of UML. It shows how elements are associated with each other and this association describes the functionality of an application.
+There are four kinds of relationships available.
+依赖Dependency:
+Dependency is a relationship between two things in which change in one element also affects the other one.
+ 
+关联Association:
+Association is basically a set of links that connects elements of an UML model. It also describes how many objects are taking part in that relationship.
+ 
+Generalization:
+Generalization can be defined as a relationship which connects a specialized element with a generalized element. It basically describes inheritance relationship in the world of objects.
+ 
+Realization:
+Realization can be defined as a relationship in which two elements are connected. One element describes some responsibility which is not implemented and the other one implements them. This relationship exists in case of interfaces.
+
+
+
+图（相当于不同的角度来观察系统，例：交通图，行政图等等）：
+类图(从需求角度)
+时序图（）
+学习顺序：类图－＞顺序图－＞用例图－＞活动图－＞状态图
+
+	UML Diagrams:
+UML diagrams are the ultimate output of the entire discussion. All the elements, relationships are used to make a complete UML diagram and the diagram represents a system.
+The visual effect of the UML diagram is the most important part of the entire process. All the other elements are used to make it a complete one.
+UML includes the following nine diagrams and the details are described in the following chapters.
+Class diagram 
+Object diagram 
+Use case diagram 
+Sequence diagram 
+Collaboration diagram 
+Activity diagram 
+Statechart diagram 
+Deployment diagram 
+Component diagram 
+
+
 
 扩展机制：
 Stereotype, Tagged Value, Constraint
+
+
+UML - Basic Notations
+Structural Things:
+Graphical notations used in structural things are the most widely used in UML. These are considered as the nouns of UML models. Following are the list of structural things.
+Classes 
+object 
+Interface 
+Collaboration 
+Use case 
+Active classes 
+Components 
+Nodes 
+Class Notation:
+UML class is represented by the diagram shown below. The diagram is divided into four parts.
+The top section is used to name the class. 
+The second one is used to show the attributes of the class. 
+The third section is used to describe the operations performed by the class. 
+The fourth section is optional to show any additional components. 
+ 
+Classes are used to represent objects. Objects can be anything having properties and responsibility.
+Object Notation:
+The object is represented in the same way as the class. The only difference is the name which is underlined as shown below.
+ 
+As object is the actual implementation of a class which is known as the instance of a class. So it has the same usage as the class.
+Interface Notation:
+Interface is represented by a circle as shown below. It has a name which is generally written below the circle.
+ 
+Interface is used to describe functionality without implementation. Interface is the just like a template where you define different functions not the implementation. When a class implements the interface it also implements the functionality as per the requirement.
+Collaboration Notation:
+Collaboration is represented by a dotted eclipse as shown below. It has a name written inside the eclipse.
+ 
+Collaboration represents responsibilities. Generally responsibilities are in a group.
+Use case Notation:
+Use case is represented as an eclipse with a name inside it. It may contain additional responsibilities.
+ 
+Use case is used to capture high level functionalities of a system.
+Actor Notation:
+An actor can be defined as some internal or external entity that interacts with the system.
+ 
+Actor is used in a use case diagram to describe the internal or external entities.
+Initial State Notation:
+Initial state is defined to show the start of a process. This notation is used in almost all diagrams.
+ 
+The usage of Initial State Notation is to show the starting point of a process.
+Final State Notation:
+Final state is used to show the end of a process. This notation is also used in almost all diagrams to describe the end.
+ 
+The usage of Final State Notation is to show the termination point of a process.
+Active class Notation:
+Active class looks similar to a class with a solid border. Active class is generally used to describe concurrent behaviour of a system.
+ 
+Active class is used to represent concurrency in a system.
+Component Notation:
+A component in UML is shown as below with a name inside. Additional elements can be added wherever required.
+ 
+Component is used to represent any part of a system for which UML diagrams are made.
+Node Notation:
+A node in UML is represented by a square box as shown below with a name. A node represents a physical component of the system.
+ 
+Node is used to represent physical part of a system like server, network etc.
+Behavioural Things:
+Dynamic parts are one of the most important elements in UML. UML has a set of powerful features to represent the dynamic part of software and non software systems. These features include interactions and state machines.
+Interactions can be of two types:
+Sequential (Represented by sequence diagram) 
+Collaborative (Represented by collaboration diagram) 
+Interaction Notation:
+Interaction is basically message exchange between two UML components. The following diagram represents different notations used in an interaction.
+ 
+Interaction is used to represent communication among the components of a system.
+State machine Notation:
+State machine describes the different states of a component in its life cycle. The notations are described in the following diagram.
+ 
+State machine is used to describe different states of a system component. The state can be active, idle or any other depending upon the situation.
+Grouping Things:
+Organizing the UML models are one of the most important aspects of the design. In UML there is only one element available for grouping and that is package.
+Package Notation:
+Package notation is shown below and this is used to wrap the components of a system.
+ 
+Annotational Things:
+In any diagram explanation of different elements and their functionalities are very important. So UML has notes notation to support this requirement.
+Note Notation:
+This notation is shown below and they are used to provide necessary information of a system.
