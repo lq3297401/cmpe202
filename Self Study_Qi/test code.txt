@@ -1,0 +1,34 @@
+public class A extends H implements C,D{
+	private E x;
+	private Set<F> f;
+	private Collection<G> g;
+	private Collection<Z> z;
+	public void operX() {/** some code **/}
+}
+
+public class B {
+	public int a;
+	int b;
+	private int[] c = new int[10];
+	// uses "D" - i.e var or param in methods;
+}
+
+public class G {
+	private Collection<A> a;
+	private Collection<Z> z;
+}
+
+public class F {
+	private Collection<A> z;
+	private B b;
+}
+
+public class E {
+}
+
+public class Z {
+	private int x;
+	private int y;
+	private A a;
+	private G g;
+}
