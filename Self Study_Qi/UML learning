@@ -61,17 +61,49 @@ A note is used to render comments, constraints etc of an UML element.
 Relationship :
 Relationship is another most important building block of UML. It shows how elements are associated with each other and this association describes the functionality of an application.
 There are four kinds of relationships available.
-依赖Dependency:
+依赖关系(Dependency):
 Dependency is a relationship between two things in which change in one element also affects the other one.
+依赖关系是用一套带箭头的虚线表示的；如下图表示A依赖于B；他描述一个对象在运行期间会用到另一个对象的关系；
  
-关联Association:
+与关联关系不同的是，它是一种临时性的关系，通常在运行期间产生，并且随着运行时的变化； 依赖关系也可能发生变化；
+显然，依赖也有方向，双向依赖是一种非常糟糕的结构，我们总是应该保持单向依赖，杜绝双向依赖的产生；
+注：在最终代码中，依赖关系体现为类构造方法及类方法的传入参数，箭头的指向为调用关系；依赖关系除了临时知道对方外，还是“使用”对方的方法和属性；
+
+ 
+关联关系(Association):
 Association is basically a set of links that connects elements of an UML model. It also describes how many objects are taking part in that relationship.
+关联关系是用一条直线表示的；它描述不同类的对象之间的结构关系；它是一种静态关系， 通常与运行状态无关，一般由常识等因素决定的；它一般用来定义对象之间静态的、天然的结构； 所以，关联关系是一种“强关联”的关系；
+比如，乘车人和车票之间就是一种关联关系；学生和学校就是一种关联关系；
+关联关系默认不强调方向，表示对象间相互知道；如果特别强调方向，如下图，表示A知道B，但 B不知道A；
+
  
-Generalization:
+
+聚合关系(Aggregation)
+聚合关系用一条带空心菱形箭头的直线表示，如下图表示A聚合到B上，或者说B由A组成；
+ 
+聚合关系用于表示实体对象之间的关系，表示整体由部分构成的语义；例如一个部门由多个员工组成；
+与组合关系不同的是，整体和部分不是强依赖的，即使整体不存在了，部分仍然存在；例如， 部门撤销了，人员不会消失，他们依然存在；
+
+组合关系(Composition)
+组合关系用一条带实心菱形箭头直线表示，如下图表示A组成B，或者B由A组成；
+ 
+与聚合关系一样，组合关系同样表示整体由部分构成的语义；比如公司由多个部门组成；
+但组合关系是一种强依赖的特殊聚合关系，如果整体不存在了，则部分也不存在了；例如， 公司不存在了，部门也将不存在了
+
+继承（Inheritance）: 由泛化和实现来表示
+
+泛化关系(Generalization)
 Generalization can be defined as a relationship which connects a specialized element with a generalized element. It basically describes inheritance relationship in the world of objects.
+继承关系为 is-a的关系；两个对象之间如果可以用 is-a 来表示，就是继承关系：（..是..)
+eg：自行车是车、猫是动物
+泛化关系用一条带空心箭头的直接表示；如下图表示（A继承自B）；
+
  
-Realization:
+实现关系(Realization)
 Realization can be defined as a relationship in which two elements are connected. One element describes some responsibility which is not implemented and the other one implements them. This relationship exists in case of interfaces.
+实现关系用一条带空心箭头的虚线表示；
+eg：”车”为一个抽象概念，在现实中并无法直接用来定义对象；只有指明具体的子类(汽车还是自行车)，才 可以用来定义对象（”车”这个类在C++中用抽象类表示，在JAVA中有接口这个概念，更容易理解）
+
 
 
 
@@ -181,3 +213,44 @@ Annotational Things:
 In any diagram explanation of different elements and their functionalities are very important. So UML has notes notation to support this requirement.
 Note Notation:
 This notation is shown below and they are used to provide necessary information of a system.
+
+
+Relationships
+A model is not complete unless the relationships between elements are described properly. The Relationship gives a proper meaning to an UML model. Following are the different types of relationships available in UML.
+Dependency 
+Association 
+Generalization 
+Extensibility 
+Dependency Notation:
+Dependency is an important aspect in UML elements. It describes the dependent elements and the direction of dependency.
+Dependency is represented by a dotted arrow as shown below. The arrow head represents the independent element and the other end the dependent element.
+ 
+Dependency is used to represent dependency between two elements of a system.
+Association Notation:
+Association describes how the elements in an UML diagram are associated. In simple word it describes how many elements are taking part in an interaction.
+Association is represented by a dotted line with (without) arrows on both sides. The two ends represent two associated elements as shown below. The multiplicity is also mentioned at the ends (1, * etc) to show how many objects are associated.
+ 
+Association is used to represent the relationship between two elements of a system.
+Generalization Notation:
+Generalization describes the inheritance relationship of the object oriented world. It is parent and child relationship.
+Generalization is represented by an arrow with hollow arrow head as shown below. One end represents the parent element and the other end child element.
+ 
+Generalization is used to describe parent-child relationship of two elements of a system.
+Extensibility Notation:
+All the languages (programming or modeling) have some mechanism to extend its capabilities like syntax, semantics etc. UML is also having the following mechanisms to provide extensibility features.
+Stereotypes (Represents new elements) 
+Tagged values (Represents new attributes) 
+Constraints (Represents the boundaries) 
+ 
+Extensibility notations are used to enhance the power of the language. It is basically additional elements used to represent some extra behaviour of the system. These extra behaviours are not covered by the standard available notations.
+
+UML - Standard Diagrams
+Sequence Diagram: 
+A sequence diagram is an interaction diagram. From the name it is clear that the diagram deals with some sequences, which are the sequence of messages flowing from one object to another.
+Interaction among the components of a system is very important from implementation and execution perspective.
+So Sequence diagram is used to visualize the sequence of calls in a system to perform a specific functionality.
+时序图
+为了展示对象之间的交互细节，后续对设计模式解析的章节，都会用到时序图；
+时序图（Sequence Diagram）是显示对象之间交互的图，这些对象是按时间顺序排列的。时序图中显示的是参与交互的对象及其对象之间消息交互的顺序。
+时序图包括的建模元素主要有：对象（Actor）、生命线（Lifeline）、控制焦点（Focus of control）、消息（Message）等等。
+
