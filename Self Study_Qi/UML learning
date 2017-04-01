@@ -32,7 +32,7 @@ UML包括：
 	A node can be defined as a physical element that exists at run time.
 
 	
-	行为Behavioral things:
+行为Behavioral things:
 A behavioral thing consists of the dynamic parts of UML models. Following are the behavioral things:
 Interaction:
 Interaction is defined as a behavior that consists of a group of messages exchanged among elements to accomplish a specific task.
