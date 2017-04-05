@@ -58,7 +58,7 @@ A note is used to render comments, constraints etc of an UML element.
 泛化（继承）
 实现
 
-Relationship :
+Relationship:
 Relationship is another most important building block of UML. It shows how elements are associated with each other and this association describes the functionality of an application.
 There are four kinds of relationships available.
 依赖关系(Dependency):
@@ -92,14 +92,14 @@ Association is basically a set of links that connects elements of an UML model. 
 
 继承（Inheritance）: 由泛化和实现来表示
 
-泛化关系(Generalization)
+泛化关系(Generalization):
 Generalization can be defined as a relationship which connects a specialized element with a generalized element. It basically describes inheritance relationship in the world of objects.
 继承关系为 is-a的关系；两个对象之间如果可以用 is-a 来表示，就是继承关系：（..是..)
 eg：自行车是车、猫是动物
 泛化关系用一条带空心箭头的直接表示；如下图表示（A继承自B）；
 
  
-实现关系(Realization)
+实现关系(Realization):
 Realization can be defined as a relationship in which two elements are connected. One element describes some responsibility which is not implemented and the other one implements them. This relationship exists in case of interfaces.
 实现关系用一条带空心箭头的虚线表示；
 eg：”车”为一个抽象概念，在现实中并无法直接用来定义对象；只有指明具体的子类(汽车还是自行车)，才 可以用来定义对象（”车”这个类在C++中用抽象类表示，在JAVA中有接口这个概念，更容易理解）
