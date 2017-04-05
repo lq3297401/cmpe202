@@ -1,6 +1,5 @@
 public class A extends H implements C,D{
 	private E x;
-	private Set<F> f;
 	private Collection<G> g;
 	private Collection<Z> z;
 	public void operX() {/** some code **/}
