@@ -1,0 +1,7 @@
+public class A extends H implements D{
+	private E x;
+	private Collection<G> g;
+	private Collection<Z> z;
+	private Collection<M> m;
+	public void operX() {}
+}
